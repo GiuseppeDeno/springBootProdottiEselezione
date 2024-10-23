@@ -86,7 +86,7 @@ public class MyController {
  	   listaProdotti.removeAll(listaProdotti);
  	   
  	 
- 	   
+ 	String nome= "prodotti";
  	   //istanzio due prodotti 
  	   //le immagini vanno in static 
  	    listaProdotti.add(new prodottoUrl("pane","pane", 1,"pane.jpeg"));
@@ -96,7 +96,7 @@ public class MyController {
 		 * assegniamo alla variabile nome il suo valore
 		 */
  	// Aggiungi la lista dei prodotti al modello
- 	    m1.addAttribute("listaProdotti", listaProdotti);
+ 	   m1.addAttribute("nome", nome); 
 	//perche?
         return "index";
     }
