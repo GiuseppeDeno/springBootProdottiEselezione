@@ -65,13 +65,13 @@ public class MyController {
 
     // Stampiamo la lista dei prodotti
     //mappiamo /listaProdottiform che è collegato al"bottone" che premuto mi deve restiture la lista di prodotti. 
-    //lo fa chiamando la lista come attributo del model e ritornando una view , una pagina html stampaLista 
+    //lo fa chiamando la lista come attributo del model e ritornando una view , una pagina html stampaCard
     
    
     @GetMapping("/listaProdottiForm") // mapping alla rotta listaProdottiForm
     public String getLista(Model m1) {
         m1.addAttribute("lista", listaProdotti);
-      //rimanda alla pagina di stampa tramite semplici ul  return "stampaLista";
+      //rimanda alla pagina di stampa tramite semplici ul  return "stampaCard";
         
         //rimando alla pagina che stampa le card di materialize
         return "stampaCard";
