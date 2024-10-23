@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagina di form </title>
+</head>
+<body>
+    <h1>form o</h1>
+ <!-- questo form ci serce per creare un oggetto di tipo persona collegiamo il form alla rotta /submit tramite action e ad una chimata
+ di tipo POST  -->
+    <!-- Questo form ci servirà per creare un nuovo oggetto di tipo persona
+colleghiamo il form alla rotta "/submit" e ad una chiamata di tipo post -->
+    
+    <!--uso metodo POST per sicurezza-->
+    <form action="/submit" method="Post">
+        <label for="nome">INSERUSCI NOME :</label>
+        <input type="text"  name="nome">
+        
+       <label for="marca">INSERISCI marca  :</label>
+        <input type="text"  name="marca">
+        <!-- i bottoni del form hanno value che è il testo sul bottone e sono input   -->
+         <label for="prezzo">INSERISCI prezzo  :</label>
+        <input type="int"  name="prezzo">
+       <input type = "submit" value = "Invia">
+    </form>
+    
+    
+        <!-- orm per aggiungere pesone all array list    -->
+       <p> form che riempie l'array list </p>
+        </form>
+<form action = "/listaProdottiForm" method = "GET">
+<input type = "submit" value = "visualizza i prdotti">
+
+</form>
+    
+</body>
+</html>
